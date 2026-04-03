@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES Compatibility Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>FLAMES Compatibility Test</h1>
+            <form method="POST" action="/result">
+                <div class="input-group">
+                    <label for="name1">Your Name:</label>
+                    <input type="text" name="name1" id="name1" required>
+                </div>
+                <div class="input-group">
+                    <label for="desc1">Your Description:</label>
+                    <textarea name="desc1" id="desc1" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="name2">Partner's Name:</label>
+                    <input type="text" name="name2" id="name2" required>
+                </div>
+                <div class="input-group">
+                    <label for="desc2">Partner's Description:</label>
+                    <textarea name="desc2" id="desc2" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Check Compatibility</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
